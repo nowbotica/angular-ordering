@@ -1,0 +1,42 @@
+
+
+<!-- <ul class="list-group">
+	<li ng-class="{'in-order': item.in_order}" ng-repeat="item in menu" class="list-group-item">
+		{{item.item_name}}
+		<input type='checkbox' value="{{item.in_order}}" check-list='checked_fruits'>
+		
+	</li>
+</ul> -->
+<h2>{{title}}</h2>
+<div class="col-sm-8" >
+    
+	<ul class="list-group" >
+		<menu-item ng-repeat="item in menu" item="item" title="'jk'"></menu-item>
+	</ul>
+</div><!-- /.col-sm-8 -->
+
+<div class="col-sm-4">
+	<ul class="list-group">
+	
+			<li ng-repeat="item in menu" class="list-group-item">
+				{{item.item_name}}: {{item.price}}
+			</li> 
+	
+	</ul>
+</div><!-- /.col-sm-4 -->
+
+
+
+<!-- <div ng-controller="Main">
+    <div ng-repeat="team in teams">
+        <b>{{team}}</b>
+        <li ng-repeat="player in players | filter: {team: team}">{{player.name}}</li>        
+    </div>
+</div> -->
+
+
+
+<!-- <button ng-click="save()">save</button>
+<input type="text" ng-model="title">
+
+<select ng-model="selectedValue" ng-options="value for value in items"></select> -->
